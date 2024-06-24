@@ -36,19 +36,21 @@ chef --version
 ```
 
 ### Step 4: Set Up a Chef Repository
-1. **Create a Chef repository:**
 
-    ```bash
-    chef generate repo chef-repo
-    yes
-    cd chef-repo
-    ```
+
 ### Troubleshoot
 If getting /opt/chef-workstation/embedded/bin/ruby: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory ERROR 
 Try
 ```
 sudo yum install libxcrypt-compat -y
 ```
+1. **Create a Chef repository:**
+    ```bash
+    chef generate repo chef-repo
+    yes
+    cd chef-repo
+    ```
+
 2. **Create a Cookbook:**
 
     ```bash
@@ -73,5 +75,6 @@ Test your cookbook by running Chef in local mode:
 
 ```bash
 sudo chef-client --local-mode --runlist recipe[my_cookbook::default]
+yes
 cat /tmp/greeting.txt
 ```
