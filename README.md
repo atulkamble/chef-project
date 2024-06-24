@@ -3,6 +3,9 @@ Basic Chef Server Project
 
 To install Chef on Amazon Linux 2023, you need to follow a few steps to ensure all dependencies are correctly handled and the Chef tool is installed properly. Here’s a step-by-step guide:
 
+### Launch EC2 - Connect it via SSH
+
+
 ### Step 1: Update the System
 First, update your system packages to make sure you have the latest updates and security patches.
 
@@ -40,7 +43,12 @@ chef --version
     yes
     cd chef-repo
     ```
-
+### Troubleshoot
+If getting /opt/chef-workstation/embedded/bin/ruby: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory ERROR 
+Try
+```
+sudo yum install libxcrypt-compat -y
+```
 2. **Create a Cookbook:**
 
     ```bash
