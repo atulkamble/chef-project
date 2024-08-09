@@ -94,3 +94,20 @@ cat /tmp/greeting.txt
 ```
 
 ---
+
+### Automation Script run:
+
+1. Save the script as `setup_chef_project.sh`.
+2. Make the script executable:
+
+    ```bash
+    chmod +x setup_chef_project.sh
+    ```
+
+3. Run the script:
+
+    ```bash
+    ./setup_chef_project.sh
+    ```
+
+This script handles the entire process from system update to Chef Workstation installation, repository setup, cookbook creation, recipe writing, and Chef client execution. Adjust the `CHEF_WORKSTATION_URL` and other variables as needed.
