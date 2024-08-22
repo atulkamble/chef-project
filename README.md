@@ -1,7 +1,7 @@
 ---
 
-# chef-server-setup-amazon-linux-2023
-Basic Chef Server Project
+# chef-workstation-setup-amazon-linux-2023
+Basic Chef Workstation Project
 
 This document provides a comprehensive guide for installing and setting up Chef on Amazon Linux 2023. Follow these instructions to ensure proper installation and configuration.
 
